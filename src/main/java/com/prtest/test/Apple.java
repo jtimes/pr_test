@@ -1,11 +1,5 @@
 package com.prtest.test;
 
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-
-@Getter @Setter
-@ToString
 public class Apple {
 
 	private long weight;
@@ -19,4 +13,22 @@ public class Apple {
 		if(this.weight > 10) return true;
 		else return false;
 	}
+
+	public long getWeight() {
+		return weight;
+	}
+
+	public void setWeight(long weight) {
+		this.weight = weight;
+	}
+
+	public String getColor() {
+		return color;
+	}
+
+	public void setColor(String color) {
+		this.color = color;
+	}
+	
+	
 }
